@@ -1,0 +1,140 @@
+.header {
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(rgb(100, 100, 100)) ,url(../public/slide_3.jpg);
+    background-blend-mode: multiply;
+}
+.headerBorder {
+    display: flex;
+    height: 135px;
+}
+
+.logo {
+ flex: 1;
+}
+
+.dot {
+    color: #f9ad81;
+}
+
+.navContainer {
+ flex: 2;
+    color : white;
+}
+
+.style.navWrapper {
+    padding: 50px;
+}
+
+.logoWrapper {
+    padding: 10px 50px;
+}
+
+.company {
+    color: white;
+}
+
+.name {
+    color: #f9ad81;
+}
+.centerWordsContent {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.centerWords {    
+    margin-top: 100px; 
+    height: 140px;
+    padding:  40px 100px;
+    overflow: hidden;
+    border: 7px solid white;
+}
+.centerWordsWrapper {
+    height: 100vh;
+    animation: move 12s ease-in-out infinite alternate; 
+    
+}
+.iconArrow {
+    width: 30px;
+}
+
+@keyframes move {
+    33% {
+        transform: translateY(-140px);
+    }
+    33% {
+        transform: translateY(-280px);
+    }
+}
+
+.centerWordsItem {
+    
+    height: 140px;
+    font-size: 70px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.buttonHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color : white;
+    margin-top: 100px;
+    
+}
+.iconArrow {
+    margin-top: 10px;
+    opacity: 50%;
+    animation: moveArrow 1s ease-in-out infinite alternate;
+}
+
+.iconArrow:hover {
+    opacity: 100%;
+}
+@keyframes moveArrow {
+    33% {
+        transform: translateY(-10px);
+    }
+    33% {
+        transform: translateY(-5px);
+    }
+}
+
+@media screen and (max-width : 480px) {
+    
+    .centerWords {    
+        margin-top: 50px; 
+        height: 60px;
+        padding: 5px;
+        overflow: hidden;
+        border: 5px solid white;
+    }
+
+    .centerWordsItem {
+    
+        height: 60px;
+        font-size: 40px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    @keyframes move {
+        33% {
+            transform: translateY(-60px);
+        }
+        33% {
+            transform: translateY(-120px);
+        }
+    }
+
+}

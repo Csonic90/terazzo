@@ -1,0 +1,30 @@
+.slider .slide-track {
+    animation: scroll 15s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.slider .slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slider .slide {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.slider .slide div {
+    padding: 0 20px; 
+    display: inline-block;
+    white-space: nowrap;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1507.25px);
+    }
+}
